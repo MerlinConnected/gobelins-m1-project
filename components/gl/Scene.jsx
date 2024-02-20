@@ -1,11 +1,5 @@
 import { Canvas } from '@react-three/fiber';
-import {
-  OrbitControls,
-  Center,
-  Environment,
-  Float,
-  Loader,
-} from '@react-three/drei';
+import { OrbitControls, Environment, Loader } from '@react-three/drei';
 
 import { useControls } from 'leva';
 
