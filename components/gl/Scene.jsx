@@ -27,14 +27,7 @@ export default function Scene() {
             <boxGeometry args={[1, 1, 1]} />
             <meshStandardMaterial color={color} />
           </mesh>
-          <OrbitControls
-            enablePan={false}
-            minPolarAngle={0}
-            maxPolarAngle={Math.PI / 1.8}
-            minDistance={1.5}
-            maxDistance={2.5}
-            target={[0, 0, 0]}
-          />
+          <OrbitControls />
           <ambientLight intensity={1} />
           <Environment preset="city" />
         </Suspense>
