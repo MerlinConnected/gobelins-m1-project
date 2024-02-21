@@ -28,12 +28,7 @@ function Model() {
   if (meshRef.current) console.log(meshRef.current);
 
   return (
-    <mesh
-      ref={meshRef}
-      onPointerOver={() => hover(true)}
-      onPointerOut={() => hover(false)}
-      scale={hovered ? 2 : 1}
-    >
+    <mesh ref={meshRef} onPointerOver={() => hover(true)} onPointerOut={() => hover(false)} scale={hovered ? 2 : 1}>
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={color} roughness={0} />
     </mesh>
